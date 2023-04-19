@@ -49,7 +49,6 @@ export const Navbar = () => {
                   {index === 0 && <HomeIcon />}
                   {index === 1 && <FeaturedPlayListIcon />}
                   {index === 2 && <MiscellaneousServicesIcon />}
-                  {index === 3 && <ListAltIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
