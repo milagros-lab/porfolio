@@ -65,8 +65,7 @@ export const Navbar = () => {
     justifyContent: "center",
     gap: theme.spacing(3),
     [theme.breakpoints.down("md")]: {
-      display: "none",
-      
+      display: "none",      
     },
   }));
 
