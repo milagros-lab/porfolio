@@ -1,5 +1,5 @@
 import { Box, Button, styled, Typography } from "@mui/material";
-import perfil from "../media/perfil.png";
+import perfil from "../media/perfilfoto.jpg";
 
 const Hero = () => {
   const CustomButton = styled(Button)(({ theme }) => ({
@@ -13,7 +13,7 @@ const Hero = () => {
       backgroundColor: "white",
     },
     [theme.breakpoints.down("md")]: {
-      width: "35%",
+      width: "30%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "50%",
@@ -43,17 +43,18 @@ const Hero = () => {
       }}
       id="home"
     >
+     <Box>
       <Typography
-        sx={{ color: "white", textAlign: "center", mb: 2 }}
-        variant="h4"
-      >
-        Milagros Chamorro 
-      </Typography>
-      <CustomTitle variant="h1">
-        Junior <span style={{ color: "rgba(0,199,255,255)" }}>Front-end</span>{" "}
-        Development 
-      </CustomTitle>
-
+          sx={{ color: "white", textAlign: "center", mb: 2 }}
+          variant="h4"
+        >
+          Milagros Chamorro 
+        </Typography>
+        <CustomTitle variant="h1">
+          Junior <span style={{ color: "rgba(0,199,255,255)" }}>Front-end</span>{" "}
+          Developer
+        </CustomTitle>
+     </Box>
       <Box
         sx={{
           display: "flex",
@@ -61,19 +62,23 @@ const Hero = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "1rem",
+         
         }}
       >
         <Box
           component="img"
           sx={{
-            height: 150,
-            width: 150,
+            height: 250,
+            width: 250,
             mt: 4,
             mb: 4,
+            borderRadius: "50%",
           }}
           src={perfil}
         />
 
+
+      
         <CustomButton>
           <a href="mailto:elichaur@gmail.com">
             Contáctame

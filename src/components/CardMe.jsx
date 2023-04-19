@@ -3,19 +3,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import perfil from "../media/perfil.png";
+import perfil from "../media/perfilfoto.jpg";
 
 
 export default function CardMe() {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          src={perfil}
-          alt="green iguana"
-        />
+      <CardActionArea>        
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Milagros Chamorro
