@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsla(240, 75%, 11%, 0.985);
+  background-color: hsla(240, 42%, 9%, 0.985);
 }
 
 code {
@@ -15,6 +15,16 @@ code {
 
 .link {
   cursor: pointer;
-  color: white;
+  color:  rgba(245, 236, 236, 0.938);
+  font-size: large;
 }
- 
+
+.Typewriter__wrapper {
+  font-size: 1.8em !important;  
+  color: rgba(0,199,255,255) !important;
+  font-weight: 100 !important;
+}
+.Typewriter__cursor {
+  font-size: 1.4em !important;
+  color: #b562d6 !important;
+}

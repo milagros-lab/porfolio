@@ -6,7 +6,7 @@ export const projects = [
   {
     title: "Inmohouse",
     description:
-      "Aplicación web de un portal inmobiliario.",
+      "Este proyecto semeja la parte front de un portal inmobiliario.",
     image: inmohouse,
     tags: ["JavaScript", "React", "Material-UI"],
     source: "",

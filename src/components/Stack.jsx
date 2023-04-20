@@ -1,11 +1,11 @@
-import { Typography, Box, styled, List, ListItemText } from "@mui/material";
+import { Typography, Box, styled } from "@mui/material";
 import React from "react";
 import { icons } from "../constants/icons";
+import Habilidades from "./Habilidades";
 import Icon from "./Icon";
 
 const Stack = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
-    maxWidth: "1300px",
     display: "flex",
     justifyContent: "space-between",
     mx: "auto",
@@ -29,7 +29,7 @@ const Stack = () => {
     <CustomBox sx={{ my: 5, padding: 2, display:"flex", flexDirection:"column"}} >
       <Box sx={{ flex: 1,  mb:4  }}>
         <Typography
-          variant="h5"
+          variant="h4"
           sx={{ color: "white", textAlign: "center" }}
         >
           Conocimientos 
@@ -99,28 +99,21 @@ const Stack = () => {
             }
           })}
         </Box>
-        
       </StackBox>
-      <Box sx={{ flex: 1,  mb:4 }} >
-        <Typography
-          variant="h5"
-          sx={{ color: "white", textAlign: "center" }}
+      <Box sx={{ 
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",}}
+      >
+      <Typography
+          variant="h4"
+          sx={{ color: "white", textAlign: "center", mb:4 }}
         >
           Habilidades 
         </Typography>
-        
-        <List   
-        sx={{  bgcolor: 'background.transparent', color:"#fff", }}
-        aria-label="contacts">
-          <ul>
-              <ListItemText inset primary="Capacidad organizativa" />
-              <ListItemText inset primary="Trabajo en equipo" />
-              <ListItemText inset primary="Adaptabilidad" />
-              <ListItemText inset primary="Creatividadd" />
-              <ListItemText inset primary="Perseverancia" />
-          </ul>           
-        </List>     
+      {<Habilidades />}
       </Box>
+      
     </CustomBox>
     
   );

@@ -2,16 +2,10 @@ import Box from "@mui/material/Box";
 import MenuIcon from "@mui/icons-material/Menu";
 import FeaturedPlayListIcon from "@mui/icons-material/FeaturedPlayList";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
-import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import { Container } from "@mui/system";
 import {
   Drawer,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
   styled,
 } from "@mui/material";
 import { useState } from "react";
@@ -35,27 +29,31 @@ export const Navbar = () => {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      sx={{ display:"flex", flexDirection: "column",  width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        {["Home", "About", "Proyect"].map(
-          (text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index === 0 && <HomeIcon />}
-                  {index === 1 && <FeaturedPlayListIcon />}
-                  {index === 2 && <MiscellaneousServicesIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
-      </List>
+      <Box style={{padding: 3}}>
+        <Link as={Link} to="/" >
+          <HomeIcon />
+                  Home
+        </Link>            
+      </Box>
+      <Box style={{padding: 3}}>
+          
+          <Link as={Link} to="/about" >
+            <FeaturedPlayListIcon />
+                About
+          </Link>
+        </Box>
+        <Box style={{padding: 3}}>
+          <Link as={Link} to="/proyect" >
+            <MiscellaneousServicesIcon />
+                Proyect
+          </Link>
+        </Box>
+                
     </Box>
   );
 
@@ -63,7 +61,7 @@ export const Navbar = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    gap: theme.spacing(3),
+    gap: theme.spacing(4),
     [theme.breakpoints.down("md")]: {
       display: "none",      
     },
@@ -80,24 +78,24 @@ export const Navbar = () => {
     },
   }));
 
-  const NavbarContainer = styled(Container)(({ theme }) => ({
+  const NavbarContainer = styled(Container)(({ theme }) => ({ 
+    overflow: "hidden",
     display: "flex",
     alignItems: "center", 
     justifyContent: "space-between",
-    padding: theme.spacing(5),
+    padding: theme.spacing(4),
     [theme.breakpoints.down("md")]: {
       padding: theme.spacing(2),
     },
   }));
 
   return (
-    <NavbarContainer  style={{ background: "", boxShadow: "none"}}>
+    <NavbarContainer  >
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          gap: "2.5rem",
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center"}}>
@@ -109,7 +107,6 @@ export const Navbar = () => {
           >
             {list("left")}
           </Drawer>
-          
         </Box>
 
         <NavbarLinksBox>
@@ -123,3 +120,4 @@ export const Navbar = () => {
 };
 
 export default Navbar;
+ 

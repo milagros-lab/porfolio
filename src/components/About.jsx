@@ -1,5 +1,4 @@
 import { Box, Typography, styled} from "@mui/material";
-import CardMe from "./CardMe";
 import Recomendaciones1 from "./Recomendaciones1";
 import Recomendaciones2 from "./Recomendaciones2";
 import Recomendaciones3 from "./Recomendaciones3";
@@ -43,7 +42,6 @@ const About = () => {
           style={{ color: "white", textAlign: "center"}}
         >
           SOBRE MI
-          {<CardMe />}
         </Typography>
 
         <Typography
@@ -69,20 +67,7 @@ const About = () => {
         <Recomendaciones1 />
         <Recomendaciones2 />
         <Recomendaciones3 />
-      </CustomBox>
-
-      <div
-        style={{
-          height: "5px",
-          backgroundColor: "#00C7FF",
-          width: "100%",
-          mx: "auto",
-          border: 0,
-          borderRadius: "25px",
-        }}
-      ></div>
-
-      
+      </CustomBox>      
     </Box>
   );
 };

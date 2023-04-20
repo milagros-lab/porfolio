@@ -12,7 +12,7 @@ import { Box } from "@mui/system";
 
 const Project = ({ title, description, tags, img, enlace, codigo }) => {
   return (
-    <Card sx={{ maxWidth: 375, margin: "1rem" }}>
+    <Card sx={{ maxWidth: 375, margin: "1rem", borderRadius: "20px" }}>
       <CardActionArea>
         <CardMedia component="img" image={img} />
         <CardContent>
@@ -33,25 +33,22 @@ const Project = ({ title, description, tags, img, enlace, codigo }) => {
             mb: 3,
           }}
            >
-            <a href={enlace} >
-              <Button
-                size="small"               
-                style={{ backgroundColor: "rgba(0,199,255,255)" }}
-                variant="contained"
+            <Button
+              target="blank" href={enlace}
+              size="small"               
+              style={{ backgroundColor: "hsla(240, 50%, 9%, 0.985)" }}
+              variant="contained"
               >
               VER DEMO
-              </Button> 
-            </a>
-
-            <a href={codigo}>
+              </Button>
               <Button
-                size="small"
-                style={{ backgroundColor: "rgba(0,199,255,255)" }}
-                variant="contained"
+              target="blank" href={codigo}
+              size="small"
+              style={{ backgroundColor: "hsla(240, 50%, 9%, 0.985)" }}
+              variant="contained"
               >
               VER CODIGO
-              </Button> 
-            </a>
+              </Button>
           </Box>          
         </CardContent>
       </CardActionArea>

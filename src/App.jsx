@@ -1,9 +1,10 @@
-import Hero from "./components/Hero";
+
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import { Route, Routes } from "react-router-dom";
-import Experience from "./components/Experience";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Proyectos from "./components/Proyectos";
 
 function App() {
   return (
@@ -12,11 +13,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} /> 
         <Route path="/about" element={<About />} />
-        <Route path="/proyect" element={<Experience />} /> 
+        <Route path="/proyect" element={<Proyectos />} />
        </Routes>
-       <About />
-       <Experience />
        <Footer />
+    
     </>
   );
 }

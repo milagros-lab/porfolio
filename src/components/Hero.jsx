@@ -1,25 +1,10 @@
-import { Box, Button, styled, Typography } from "@mui/material";
-import perfil from "../media/perfilfoto.jpg";
+import { Box, styled, Typography } from "@mui/material";
+import perfil from "../media/perfilfoto.jpg"
+import About from "./About";
+import Proyectos from "./Proyectos";
+import Stack from "./Stack";
 
 const Hero = () => {
-  const CustomButton = styled(Button)(({ theme }) => ({
-    border: "3px solid transparent",
-    backgroundColor: "#00C7FF",
-    color: "white",
-    width: "20%",
-    borderRadius: "25px",
-    "&:hover": {
-      border: "3px solid white",
-      backgroundColor: "white",
-    },
-    [theme.breakpoints.down("md")]: {
-      width: "30%",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "50%",
-    },
-  }));
-
   const CustomTitle = styled(Typography)(({ theme }) => ({
     color: "white",
     textAlign: "center",
@@ -32,20 +17,18 @@ const Hero = () => {
   }));
 
   return (
-    
     <Box
       sx={{
         mt: 8,
         mb: 12,
         p: 2,
-        maxWidth: "1200px",
         mx: "auto",
       }}
       id="home"
     >
-     <Box>
-      <Typography
-          sx={{ color: "white", textAlign: "center", mb: 2 }}
+      <Box>
+        <Typography
+          sx={{ color: "white", textAlign: "center", mt: 20 }}
           variant="h4"
         >
           Milagros Chamorro 
@@ -53,8 +36,8 @@ const Hero = () => {
         <CustomTitle variant="h1">
           Junior <span style={{ color: "rgba(0,199,255,255)" }}>Front-end</span>{" "}
           Developer
-        </CustomTitle>
-     </Box>
+        </CustomTitle>              
+      </Box>
       <Box
         sx={{
           display: "flex",
@@ -62,7 +45,6 @@ const Hero = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "1rem",
-         
         }}
       >
         <Box
@@ -70,21 +52,16 @@ const Hero = () => {
           sx={{
             height: 250,
             width: 250,
-            mt: 4,
-            mb: 4,
-            borderRadius: "50%",
+            mt: 8,
+            mb: 8,
+            borderRadius: "40%",
           }}
           src={perfil}
         />
-
-
-      
-        <CustomButton>
-          <a href="mailto:elichaur@gmail.com">
-            Contáctame
-          </a>
-        </CustomButton>
       </Box>
+      <About />
+      <Proyectos />
+      <Stack />
     </Box>
   );
 };

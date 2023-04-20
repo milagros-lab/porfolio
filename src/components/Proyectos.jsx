@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { projects } from "../constants/project";
 import Project from "./Project";
-import Stack from "./Stack";
 
-const Experience = () => {
+
+const Proyectos = () => {
   return (
     <Box sx={{ maxWidth: "1300px", mx: "auto", my: 12 }} id="experience">
       <Typography
@@ -12,11 +12,11 @@ const Experience = () => {
       >       
         MIS PROYECTOS
       </Typography>
-      <Box
+      <Box 
         sx={{
           display: "flex",
           justifyContent: "center",
-          flexWrap: "wrap",
+          flexWrap: "wrap",          
         }}
       >
         {projects.map((project) => (
@@ -31,10 +31,8 @@ const Experience = () => {
           />
         ))}
       </Box>
-
-      <Stack />
     </Box>
   );
 };
 
-export default Experience;
+export default Proyectos;
