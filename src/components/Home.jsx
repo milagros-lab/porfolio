@@ -4,7 +4,7 @@ import About from "./About";
 import Proyectos from "./Proyectos";
 import Stack from "./Stack";
 
-const Hero = () => {
+const Home = () => {
   const CustomTitle = styled(Typography)(({ theme }) => ({
     color: "white",
     textAlign: "center",
@@ -19,8 +19,8 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        mt: 8,
-        mb: 12,
+        mt: 4,
+        mb: 8,
         p: 2,
         mx: "auto",
       }}
@@ -28,7 +28,7 @@ const Hero = () => {
     >
       <Box>
         <Typography
-          sx={{ color: "white", textAlign: "center", mt: 20 }}
+          sx={{ color: "white", textAlign: "center", mt: 3 }}
           variant="h4"
         >
           Milagros Chamorro 
@@ -52,18 +52,15 @@ const Hero = () => {
           sx={{
             height: 250,
             width: 250,
-            mt: 8,
+            mt: 5,
             mb: 8,
             borderRadius: "40%",
           }}
           src={perfil}
         />
-      </Box>
-      <About />
-      <Proyectos />
-      <Stack />
+      </Box>     
     </Box>
   );
 };
 
-export default Hero;
+export default Home;
