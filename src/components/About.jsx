@@ -16,7 +16,7 @@ const About = () => {
         <Typography variant="h4" color="white">
           Milagros Chamorro
         </Typography>
-        <Typography variant="body2" color="white" padding={"15px"}>
+        <Typography variant="body2" color="white" padding={"16px"}>
           Me motiva seguir aprendiendo y creciendo como desarrrolladora y llegar
           a convertirme en un activo importe dentro de un equipo de trabajo. Se
           me da muy bien el trabajo en equipo, me considero una persona
