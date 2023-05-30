@@ -7,10 +7,6 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        maxWidth: "1100px",
-        borderTop: "1px solid #7B89A8",
-        mx: "auto",
-        padding: 3,
         display: "flex",
         justifyContent: "space-around",
       }}
@@ -21,24 +17,26 @@ const Footer = () => {
           flexDirection: "row",
         }}
       >
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer",  }}>
-          <a target="blank" href="https://github.com/milagros-lab" >
-            <GitHubIcon sx={{ mr: 2, color: "white", my: 1}} />    
+        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+          <a target="blank" href="https://github.com/milagros-lab">
+            <GitHubIcon sx={{ mr: 2, color: "white", my: 1 }} />
           </a>
         </Box>
 
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
           <a href="mailto:elichaur@gmail.com">
             <EmailIcon sx={{ mr: 2, color: "white", my: 1 }} />
-          </a>          
+          </a>
         </Box>
 
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <a  target="blank" href="https://www.linkedin.com/in/milagros-chamorro/">
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/milagros-chamorro/"
+          >
             <LinkedInIcon sx={{ mr: 2, color: "white", my: 1 }} />
-          </a>         
+          </a>
         </Box>
-
       </Box>
     </Box>
   );

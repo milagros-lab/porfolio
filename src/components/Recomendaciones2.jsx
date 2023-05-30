@@ -7,7 +7,7 @@ const Recomendaciones2 = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#000F2E",
+        backgroundColor: "#330052",
         padding: 3,
         border: "1px solid #00C7FF",
         borderRadius: "10px",

@@ -11,7 +11,7 @@ const Icon = ({ name, src }) => {
       }}
     >
       <img src={src} height="40px" width="40px" alt="" />
-      <Typography variant="body1" sx={{ color: "white", mt: 1}}>
+      <Typography variant="body1" sx={{ color: "white", mt: 1 }}>
         {name}
       </Typography>
     </Box>

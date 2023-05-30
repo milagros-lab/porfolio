@@ -1,7 +1,6 @@
 import { Typography, Box, styled } from "@mui/material";
 import React from "react";
 import { icons } from "../constants/icons";
-import Habilidades from "./Habilidades";
 import Icon from "./Icon";
 
 const Stack = () => {
@@ -21,26 +20,25 @@ const Stack = () => {
     justifyContent: "space-around",
     [theme.breakpoints.down("md")]: {
       marginLeft: "0",
-      marginTop: "3rem",
+      /* marginTop: "3rem", */
     },
   }));
 
   return (
-    <CustomBox sx={{ my: 5, padding: 2, display:"flex", flexDirection:"column"}} >
-      <Box sx={{ flex: 1,  mb:4  }}>
-        <Typography
-          variant="h4"
-          sx={{ color: "white", textAlign: "center" }}
-        >
-          Conocimientos 
-        </Typography>  
-      </Box>
+    <CustomBox sx={{ padding: 2, display: "flex", flexDirection: "column" }}>
+      <Typography
+        variant="h4"
+        sx={{ color: "white", textAlign: "center", margin: "10px" }}
+      >
+        Conocimientos
+      </Typography>
       <StackBox>
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            margin: "10px",
           }}
         >
           {icons.map((icon, i) => {
@@ -57,6 +55,7 @@ const Stack = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            margin: "10px",
           }}
         >
           {icons.map((icon, i) => {
@@ -73,6 +72,7 @@ const Stack = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            margin: "10px",
           }}
         >
           {icons.map((icon, i) => {
@@ -89,6 +89,7 @@ const Stack = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            margin: "10px",
           }}
         >
           {icons.map((icon, i) => {
@@ -100,22 +101,7 @@ const Stack = () => {
           })}
         </Box>
       </StackBox>
-      <Box sx={{ 
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",}}
-      >
-      <Typography
-          variant="h4"
-          sx={{ color: "white", textAlign: "center", mb:4 }}
-        >
-          Habilidades 
-        </Typography>
-      {<Habilidades />}
-      </Box>
-      
     </CustomBox>
-    
   );
 };
 

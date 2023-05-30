@@ -26,11 +26,11 @@ const CustomButton = ({
     },
     [theme.breakpoints.down("md")]: {
       margin: (heroBtn || getStartedBtn) && theme.spacing(0, "auto", 3, "auto"),
-      width: (heroBtn || getStartedBtn) && "90%",
+      width: (heroBtn || getStartedBtn) && "60%",
     },
     [theme.breakpoints.down("sm")]: {
       marginTop: guideBtn && theme.spacing(3),
-      width: guideBtn && "90%",
+      width: guideBtn && "50%",
     },
   }));
 

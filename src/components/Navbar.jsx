@@ -3,11 +3,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import FeaturedPlayListIcon from "@mui/icons-material/FeaturedPlayList";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import HomeIcon from "@mui/icons-material/Home";
+import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import { Container } from "@mui/system";
-import {
-  Drawer,
-  styled,
-} from "@mui/material";
+import { Drawer, styled } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -29,31 +27,39 @@ export const Navbar = () => {
 
   const list = (anchor) => (
     <Box
-      sx={{ display:"flex", flexDirection: "column",  width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
+      }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Box style={{padding: 3}}>
-        <Link as={Link} to="/" >
+      <Box style={{ padding: 3 }}>
+        <Link as={Link} to="/">
           <HomeIcon />
-                  Home
-        </Link>            
+          Home
+        </Link>
+        <Box>
+        <Link as={Link} to="/about">
+          <AccountCircleSharpIcon />
+            Sobre mí
+          </Link>
+        </Box>
       </Box>
-      <Box style={{padding: 3}}>
-          
-          <Link as={Link} to="/about" >
-            <FeaturedPlayListIcon />
-                About
-          </Link>
-        </Box>
-        <Box style={{padding: 3}}>
-          <Link as={Link} to="/proyect" >
-            <MiscellaneousServicesIcon />
-                Proyect
-          </Link>
-        </Box>
-                
+      <Box style={{ padding: 3 }}>
+        <Link as={Link} to="/referencias">
+          <FeaturedPlayListIcon />
+          Referencias
+        </Link>
+      </Box>
+      <Box style={{ padding: 3 }}>
+        <Link as={Link} to="/proyect">
+          <MiscellaneousServicesIcon />
+          Proyect
+        </Link>
+      </Box>
     </Box>
   );
 
@@ -63,10 +69,9 @@ export const Navbar = () => {
     justifyContent: "center",
     gap: theme.spacing(4),
     [theme.breakpoints.down("md")]: {
-      display: "none",      
+      display: "none",
     },
   }));
-
 
   const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({
     cursor: "pointer",
@@ -78,10 +83,10 @@ export const Navbar = () => {
     },
   }));
 
-  const NavbarContainer = styled(Container)(({ theme }) => ({ 
+  const NavbarContainer = styled(Container)(({ theme }) => ({
     overflow: "hidden",
     display: "flex",
-    alignItems: "center", 
+    alignItems: "center",
     justifyContent: "space-between",
     padding: theme.spacing(4),
     [theme.breakpoints.down("md")]: {
@@ -90,7 +95,7 @@ export const Navbar = () => {
   }));
 
   return (
-    <NavbarContainer  >
+    <NavbarContainer>
       <Box
         sx={{
           display: "flex",
@@ -98,7 +103,7 @@ export const Navbar = () => {
           justifyContent: "center",
         }}
       >
-        <Box sx={{ display: "flex", alignItems: "center"}}>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
           <CustomMenuIcon onClick={toggleDrawer("left", true)} />
           <Drawer
             anchor="left"
@@ -110,9 +115,18 @@ export const Navbar = () => {
         </Box>
 
         <NavbarLinksBox>
-          <Link variant="body2" to="/" className="link">Home</Link>
-          <Link variant="body2" to= "/about"className="link">About me</Link>
-          <Link variant="body2" to= "/Proyect" className="link">Proyect</Link>
+          <Link variant="body2" to="/" className="link">
+            Home
+          </Link>
+          <Link variant="body2" to="/about" className="link">
+            Sobre mí
+          </Link>
+          <Link variant="body2" to="/referencias" className="link">
+            References
+          </Link>
+          <Link variant="body2" to="/Proyect" className="link">
+            Proyect
+          </Link>
         </NavbarLinksBox>
       </Box>
     </NavbarContainer>
@@ -120,4 +134,3 @@ export const Navbar = () => {
 };
 
 export default Navbar;
- 

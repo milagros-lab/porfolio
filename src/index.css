@@ -5,7 +5,12 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsla(240, 42%, 9%, 0.985);
+  background-image: linear-gradient(
+    43deg,
+    #04166e 0%,
+    #551350 46%,
+    #225c3f 100%
+  );
 }
 
 code {
@@ -15,13 +20,13 @@ code {
 
 .link {
   cursor: pointer;
-  color:  rgba(245, 236, 236, 0.938);
+  color: rgba(245, 236, 236, 0.938);
   font-size: large;
 }
 
 .Typewriter__wrapper {
-  font-size: 1.8em !important;  
-  color: rgba(0,199,255,255) !important;
+  font-size: 1.8em !important;
+  color: rgba(0, 199, 255, 255) !important;
   font-weight: 100 !important;
 }
 .Typewriter__cursor {

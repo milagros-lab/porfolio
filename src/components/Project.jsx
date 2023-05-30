@@ -24,36 +24,38 @@ const Project = ({ title, description, tags, img, enlace, codigo }) => {
           </Typography>
 
           <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-around",
-            mx: "auto",
-            mt: 3,
-            mb: 3,
-          }}
-           >
+            sx={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "space-around",
+              mx: "auto",
+              mt: 3,
+              mb: 3,
+            }}
+          >
             <Button
-              target="blank" href={enlace}
-              size="small"               
-              style={{ backgroundColor: "hsla(240, 50%, 9%, 0.985)" }}
-              variant="contained"
-              >
-              VER DEMO
-              </Button>
-              <Button
-              target="blank" href={codigo}
+              target="blank"
+              href={enlace}
               size="small"
-              style={{ backgroundColor: "hsla(240, 50%, 9%, 0.985)" }}
+              style={{ backgroundColor: " #330052" }}
               variant="contained"
-              >
+            >
+              VER DEMO
+            </Button>
+            <Button
+              target="blank"
+              href={codigo}
+              size="small"
+              style={{ backgroundColor: " #330052" }}
+              variant="contained"
+            >
               VER CODIGO
-              </Button>
-          </Box>          
+            </Button>
+          </Box>
         </CardContent>
       </CardActionArea>
 
-      <CardActions sx={{ display: "flex", flexDirection: "column" }}>        
+      <CardActions sx={{ display: "flex", flexDirection: "column" }}>
         <Box
           sx={{
             width: "100%",

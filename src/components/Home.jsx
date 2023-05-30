@@ -1,64 +1,67 @@
-import { Box, styled, Typography } from "@mui/material";
-import perfil from "../media/perfilfoto.jpg"
-import About from "./About";
-import Proyectos from "./Proyectos";
-import Stack from "./Stack";
+import { Box, Button, Container, styled, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import imagen from "../media/image2.png";
+import Footer from "./Footer";
 
 const Home = () => {
-  const CustomTitle = styled(Typography)(({ theme }) => ({
-    color: "white",
-    textAlign: "center",
+  const CustomBox = styled(Box)(({ theme }) => ({
+    display: "flex",
+    justifyContent: "center",
+    marginTop: theme.spacing(3),
     [theme.breakpoints.down("md")]: {
-      fontSize: "3.5rem",
-    },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "2.5rem",
+      flexDirection: "column",
+      alignItems: "center",
+      textAlign: "center",
     },
   }));
 
   return (
-    <Box
-      sx={{
-        mt: 4,
-        mb: 8,
-        p: 2,
-        mx: "auto",
-      }}
-      id="home"
-    >
-      <Box>
-        <Typography
-          sx={{ color: "white", textAlign: "center", mt: 3 }}
-          variant="h4"
-        >
-          Milagros Chamorro 
-        </Typography>
-        <CustomTitle variant="h1">
-          Junior <span style={{ color: "rgba(0,199,255,255)" }}>Front-end</span>{" "}
-          Developer
-        </CustomTitle>              
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1rem",
-        }}
-      >
-        <Box
-          component="img"
-          sx={{
-            height: 250,
-            width: 250,
-            mt: 5,
-            mb: 8,
-            borderRadius: "40%",
-          }}
-          src={perfil}
-        />
-      </Box>     
+    <Box>
+      <Container>
+        <CustomBox>
+          <Box sx={{ flex: "1.5" }}>
+            <Typography
+              variant="body1"
+              sx={{
+                fontSize: "30px",
+                color: "#fff",
+                fontWeight: "500",
+                mb: 4,
+              }}
+            >
+              Milagros Chamorro
+            </Typography>
+            <Typography variant="h2" sx={{ color: "#fff", my: 1 }}>
+              Junior{" "}
+              <span style={{ color: "rgba(0,199,255,255)" }}>Front-end</span>{" "}
+              Developer
+            </Typography>
+            <Typography variant="body2" color="#fff">
+              Experienca trabajando por proyectos, metodología agile, code
+              review, dailys, react, javaScript
+            </Typography>
+            <Footer
+              style={{ display: "flex", justifyContent: "space-between" }}
+            />
+            <Button
+              sx={{ mt: 3 }}
+              style={{ background: "rgba(0,199,255,255)" }}
+              variant="contained"
+              component={Link}
+              to="/about"
+            >
+              Sobre mí
+            </Button>
+          </Box>
+          <Box sx={{ flex: "1.25" }}>
+            <img
+              alt="imagen"
+              src={imagen}
+              style={{ maxWidth: "90%", marginBottom: "2rem" }}
+            />
+          </Box>
+        </CustomBox>
+      </Container>
     </Box>
   );
 };
