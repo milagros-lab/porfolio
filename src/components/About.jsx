@@ -17,11 +17,10 @@ const About = () => {
           Milagros Chamorro
         </Typography>
         <Typography variant="body2" color="white" padding={"15px"}>
-          Mi deseo de superación me ha llevado a reinventarme y descubrir el
-          mundo de la programación, me considero una persona autodidacta,
-          afronto bien los retos, me motiva aprender y mejorar cada día. Soy
-          desarrolladora front, tengo experiencia trabajando en proyectos bajo
-          la metodología Ágile como junior development.
+          Me motiva seguir aprendiendo y creciendo como desarrrolladora y llegar
+          a convertirme en un activo importe dentro de un equipo de trabajo. Se
+          me da muy bien el trabajo en equipo, me considero una persona
+          perseverante, empatica y con capacidad organizativa.
         </Typography>
         <Stack />
 
