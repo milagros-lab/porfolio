@@ -1,6 +1,7 @@
 import tiendaOnline from "../media/tienda-online.png";
 import inmohouse from "../media/inmohouse.png";
 import meals from "../media/meals.png";
+import industry from "../media/industry.png"
 
 export const projects = [
   {
@@ -38,5 +39,17 @@ export const projects = [
     id: 2,
     enlace : "https://meals-app.milagroschamorr.repl.co/",
     codigo: "https://replit.com/@milagroschamorr/Meals-App"
+  },
+  {
+    title: "Web industry",
+    description:
+      "Utilizando html, bootstrap y scss, realice el front de esta aplicacion web",
+    image: industry,
+    tags: ["html", "scss", "bootstrap"],
+    source: "",
+    liveVersion: "",
+    id: 2,
+    enlace : "https://zesty-chebakia-c53ed2.netlify.app/",
+    codigo: "https://github.com/milagros-lab/industry"
   },
 ];
