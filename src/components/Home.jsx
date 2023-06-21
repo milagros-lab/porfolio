@@ -1,6 +1,6 @@
 import { Box, Button, Container, styled, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import imagen from "../media/image2.png";
+import imagen from "../assets/img/image2.png";
 import Footer from "./Footer";
 
 const Home = () => {

@@ -39,7 +39,7 @@ export const Navbar = () => {
       <Box style={{ padding: 3 }}>
         <Link as={Link} to="/">
           <HomeIcon />
-          Home
+          Inicio
         </Link>
         <Box>
         <Link as={Link} to="/about">
@@ -57,7 +57,7 @@ export const Navbar = () => {
       <Box style={{ padding: 3 }}>
         <Link as={Link} to="/proyect">
           <MiscellaneousServicesIcon />
-          Proyect
+          Proyectos
         </Link>
       </Box>
     </Box>
@@ -115,17 +115,17 @@ export const Navbar = () => {
         </Box>
 
         <NavbarLinksBox>
-          <Link variant="body2" to="/" className="link">
-            Home
+          <Link variant="body2"  style={{ textDecoration: "none" }} to="/" className="link">
+            Inicio
           </Link>
-          <Link variant="body2" to="/about" className="link">
+          <Link variant="body2"  style={{ textDecoration: "none" }} to="/about" className="link">
             Sobre mí
           </Link>
-          <Link variant="body2" to="/referencias" className="link">
-            References
+          <Link variant="body2"  style={{ textDecoration: "none" }} to="/referencias" className="link">
+            Referencias
           </Link>
-          <Link variant="body2" to="/Proyect" className="link">
-            Proyect
+          <Link variant="body2"  style={{ textDecoration: "none" }} to="/Proyect" className="link">
+            Proyectos
           </Link>
         </NavbarLinksBox>
       </Box>

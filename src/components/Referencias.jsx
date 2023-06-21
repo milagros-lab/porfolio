@@ -14,6 +14,7 @@ const Recomendaciones = () => {
       alignItems: "center",
       gap: "2rem",
     },
+   
   }));
   return (
     <>
@@ -23,7 +24,7 @@ const Recomendaciones = () => {
         >
           Referencias
         </Typography>
-      <CustomBox sx={{ my: 7 }}>
+      <CustomBox className="hover" sx={{ my: 7,  }}>
         <Recomendaciones1 />
         <Recomendaciones2 />
         <Recomendaciones3 />

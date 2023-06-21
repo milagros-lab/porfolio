@@ -1,7 +1,7 @@
-import tiendaOnline from "../media/tienda-online.png";
-import inmohouse from "../media/inmohouse.png";
-import meals from "../media/meals.png";
-import industry from "../media/industry.png"
+import tiendaOnline from "..//assets/img/tienda-online.png";
+import inmohouse from "..//assets/img/inmohouse.png";
+import meals from "..//assets/img/meals.png";
+import industry from "..//assets/img/industry.png"
 
 export const projects = [
   {
@@ -33,7 +33,7 @@ export const projects = [
     description:
       "Esta aplicación se conecta a la API externa TheMealDB para obtener diferentes tipos de recetas de comida.",
     image: meals,
-    tags: ["React", "JavaScript", "axios"],
+    tags: ["React", "JavaScript", "Axios"],
     source: "",
     liveVersion: "",
     id: 2,
@@ -45,7 +45,7 @@ export const projects = [
     description:
       "Utilizando html, bootstrap y scss, realice el front de esta aplicacion web",
     image: industry,
-    tags: ["html", "scss", "bootstrap"],
+    tags: ["Html", "Saas", "Bootstrap"],
     source: "",
     liveVersion: "",
     id: 2,

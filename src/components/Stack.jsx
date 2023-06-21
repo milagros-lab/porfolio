@@ -19,13 +19,12 @@ const Stack = () => {
     display: "flex",
     justifyContent: "space-around",
     [theme.breakpoints.down("md")]: {
-      marginLeft: "0",
-      /* marginTop: "3rem", */
+      marginLeft: "0",     
     },
   }));
 
   return (
-    <CustomBox sx={{ padding: 2, display: "flex", flexDirection: "column" }}>
+    <CustomBox sx={{ padding: 2, display: "flex", flexDirection: "column", alignItems: "center"}}>
       <Typography
         variant="h4"
         sx={{ color: "white", textAlign: "center", margin: "10px" }}

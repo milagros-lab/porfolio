@@ -1,12 +1,12 @@
 export const icons = [
   {
     id: 0,
-    name: "HTML",
+    name: "Html",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
   {
     id: 1,
-    name: "CSS",
+    name: "Css",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
@@ -16,7 +16,7 @@ export const icons = [
   },
   {
     id: 3,
-    name: "SASS",
+    name: "Sass",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
   },
   {

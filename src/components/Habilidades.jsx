@@ -7,7 +7,7 @@ function Habilidades() {
         strings: [
           "Capacidad organizativa",
           "Trabajo en equipo",
-          "Perservancia y empatía",
+          "Perservancia y Empatía",
         ],
         autoStart: true,
         loop: true,
