@@ -5,7 +5,7 @@ import Project from "./Project";
 
 const Proyectos = () => {
   return (
-    <Box sx={{ maxWidth: "1300px" }} id="experience">
+    <Box id="experience">
       <Typography
         variant="h4"
         sx={{ color: "white", textAlign: "center", mb: 2 }}
