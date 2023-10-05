@@ -7,9 +7,9 @@ export const projects = [
   {
     title: "Inmohouse",
     description:
-      "Este proyecto semeja la parte front de un portal inmobiliario.",
+      "Front-end de portal inmobiliario. He  Utilizando React para la interzad de usuario, Material UI para dar estilo a los componentes y React-Router para una navegación fluida y optimizada.",
     image: inmohouse,
-    tags: ["JavaScript", "React", "Material-UI"],
+    tags: ["JavaScript", "React", "Material-UI, React-Router"],
     source: "",
     liveVersion: "",
     id: 0,
@@ -19,19 +19,19 @@ export const projects = [
   {
     title: "Tienda online",
     description:
-      "Es una aplicación de tienda online con pasarela de pago",
+      "Aplicación web interactiva realizada utilizando tecnologías modernas como React para la interfaz de usuario, Firebase para la gestión de datos y la autenticación, y Material-UI (MUI) para un diseño atractivo y altamente funcional.",
     image: tiendaOnline,
     tags: ["React", "JavaScript", "Firebase", "MUI"],
     source: "",
     liveVersion: "",
     id: 1,
-    enlace : "https://642564506752af60efef4b97--precious-conkies-740b33.netlify.app/",
+    enlace : "https://tiendaonlinemila.netlify.app/",
     codigo: "https://github.com/milagros-lab/tienda-online"
   },
   {
-    title: "Recetas de comidas",
+    title: "Mi menú",
     description:
-      "Esta aplicación se conecta a la API externa TheMealDB para obtener diferentes tipos de recetas de comida.",
+      "Esta aplicación se conecta a la API externa TheMealDB para obtener diferentes tipos de recetas de comida, se trata de un sitio web totalmente responsive que se adapta a diferentes dispositivos.",
     image: meals,
     tags: ["React", "JavaScript", "Axios"],
     source: "",
@@ -43,7 +43,7 @@ export const projects = [
   {
     title: "Web industry",
     description:
-      "Utilizando html, bootstrap y scss, realice el front de esta aplicacion web",
+      "El proyecto tiene como objetivo desarrollar un sitio web receptivo y estéticamente agradable utilizando HTML para la estructura básica, Bootstrap para el diseño y la funcionalidad, y SCSS para mejorar la organización y reutilización del código CSS.",
     image: industry,
     tags: ["Html", "Saas", "Bootstrap"],
     source: "",

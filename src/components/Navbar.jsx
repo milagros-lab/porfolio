@@ -3,7 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import FeaturedPlayListIcon from "@mui/icons-material/FeaturedPlayList";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import HomeIcon from "@mui/icons-material/Home";
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
+import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
 import { Container } from "@mui/system";
 import { Drawer, styled } from "@mui/material";
 import { useState } from "react";
@@ -30,20 +30,23 @@ export const Navbar = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
+        width: anchor === "top" || anchor === "bottom" ? "auto" : 0,
       }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Box style={{ padding: 3 }}>
-        <Link as={Link} to="/">
-          <HomeIcon />
-          Inicio
-        </Link>
+      <Box >
+        <Box style={{ padding: 3 }}>
+          <Link as={Link} to="/">
+            <HomeIcon />
+            Inicio
+          </Link>
+        </Box>
+
         <Box>
-        <Link as={Link} to="/about">
-          <AccountCircleSharpIcon />
+          <Link as={Link} to="/about">
+            <AccountCircleSharpIcon />
             Sobre mí
           </Link>
         </Box>
@@ -115,16 +118,36 @@ export const Navbar = () => {
         </Box>
 
         <NavbarLinksBox>
-          <Link variant="body2"  style={{ textDecoration: "none" }} to="/" className="link">
+          <Link
+            variant="body2"
+            style={{ textDecoration: "none" }}
+            to="/"
+            className="link"
+          >
             Inicio
           </Link>
-          <Link variant="body2"  style={{ textDecoration: "none" }} to="/about" className="link">
+          <Link
+            variant="body2"
+            style={{ textDecoration: "none" }}
+            to="/about"
+            className="link"
+          >
             Sobre mí
           </Link>
-          <Link variant="body2"  style={{ textDecoration: "none" }} to="/referencias" className="link">
+          <Link
+            variant="body2"
+            style={{ textDecoration: "none" }}
+            to="/referencias"
+            className="link"
+          >
             Referencias
           </Link>
-          <Link variant="body2"  style={{ textDecoration: "none" }} to="/Proyect" className="link">
+          <Link
+            variant="body2"
+            style={{ textDecoration: "none" }}
+            to="/Proyect"
+            className="link"
+          >
             Proyectos
           </Link>
         </NavbarLinksBox>
