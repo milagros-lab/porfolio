@@ -22,48 +22,42 @@ export const Navbar = () => {
       return;
     }
 
-    setMobileMenu({ ...mobileMenu, [anchor]: open });
+    setMobileMenu({ ...mobileMenu, [anchor]: open });   
   };
 
   const list = (anchor) => (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: anchor === "top" || anchor === "bottom" ? "auto" : 0,
-      }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+    <Drawer
+      anchor={anchor}
+      open={mobileMenu[anchor]}
+      onClose={toggleDrawer(anchor, false)}
     >
-      <Box >
-        <Box style={{ padding: 3 }}>
-          <Link as={Link} to="/">
-            <HomeIcon />
-            Inicio
-          </Link>
-        </Box>
-
-        <Box>
-          <Link as={Link} to="/about">
-            <AccountCircleSharpIcon />
-            Sobre mí
-          </Link>
-        </Box>
-      </Box>
-      <Box style={{ padding: 3 }}>
-        <Link as={Link} to="/referencias">
+      <Box
+        sx={{
+          width: 250,
+          display: "flex",
+          flexDirection: "column",
+          gap: 3,
+          padding: 3,
+        }}
+      >
+        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+          <HomeIcon />
+          Inicio
+        </Link>
+        <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
+          <AccountCircleSharpIcon />
+          Sobre mí
+        </Link>
+        <Link to="/referencias" style={{ textDecoration: "none", color: "black" }}>
           <FeaturedPlayListIcon />
           Referencias
         </Link>
-      </Box>
-      <Box style={{ padding: 3 }}>
-        <Link as={Link} to="/proyect">
+        <Link to="/proyect" style={{ textDecoration: "none", color: "black" }}>
           <MiscellaneousServicesIcon />
           Proyectos
         </Link>
       </Box>
-    </Box>
+    </Drawer>
   );
 
   const NavbarLinksBox = styled(Box)(({ theme }) => ({
@@ -107,7 +101,7 @@ export const Navbar = () => {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <CustomMenuIcon onClick={toggleDrawer("left", true)} />
+          <CustomMenuIcon onClick={(e) => {toggleDrawer("left", true)(e); }} />
           <Drawer
             anchor="left"
             open={mobileMenu["left"]}
