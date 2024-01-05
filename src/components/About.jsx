@@ -58,6 +58,8 @@ export default function ActionAreaCard() {
           href={cv}
           style={{ textDecoration: "none" }}
           download="CV_Milagros_Chamorro_junior_developer__.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Button
             sx={{ mt: 3 }}

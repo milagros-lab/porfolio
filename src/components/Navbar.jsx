@@ -22,7 +22,11 @@ export const Navbar = () => {
       return;
     }
 
-    setMobileMenu({ ...mobileMenu, [anchor]: open });   
+    setMobileMenu({ ...mobileMenu, [anchor]: open });
+  };
+
+  const closeMenuMovil = () => {
+    setMobileMenu({ left: false });
   };
 
   const list = (anchor) => (
@@ -33,26 +37,44 @@ export const Navbar = () => {
     >
       <Box
         sx={{
-          width: 250,
+          width: 150,
+          height: "100%",
           display: "flex",
           flexDirection: "column",
           gap: 3,
           padding: 3,
+          backgroundColor: "#d4e1e5",
         }}
       >
-        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+        <Link 
+          to="/" 
+          style={{ textDecoration: "none", color: "#5e1f77" }}
+          onClick={closeMenuMovil}          
+          >
           <HomeIcon />
           Inicio
         </Link>
-        <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
+        <Link 
+          to="/about" 
+          style={{ textDecoration: "none", color: "#5e1f77" }}
+          onClick={closeMenuMovil}          
+          >
           <AccountCircleSharpIcon />
           Sobre mí
         </Link>
-        <Link to="/referencias" style={{ textDecoration: "none", color: "black" }}>
+        <Link
+          to="/referencias"
+          style={{ textDecoration: "none", color: "#5e1f77" }}
+          onClick={closeMenuMovil}
+        >
           <FeaturedPlayListIcon />
           Referencias
         </Link>
-        <Link to="/proyect" style={{ textDecoration: "none", color: "black" }}>
+        <Link
+          to="/proyect"
+          style={{ textDecoration: "none", color: "#5e1f77" }}
+          onClick={closeMenuMovil}
+        >
           <MiscellaneousServicesIcon />
           Proyectos
         </Link>
@@ -101,7 +123,11 @@ export const Navbar = () => {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <CustomMenuIcon onClick={(e) => {toggleDrawer("left", true)(e); }} />
+          <CustomMenuIcon
+            onClick={(e) => {
+              toggleDrawer("left", true)(e);
+            }}
+          />
           <Drawer
             anchor="left"
             open={mobileMenu["left"]}
