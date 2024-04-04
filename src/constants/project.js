@@ -3,7 +3,7 @@ import inmohouse from "..//assets/img/inmohouse.png";
 import meals from "..//assets/img/meals.png";
 import industry from "..//assets/img/industry.png";
 import movie from "..//assets/img/movie.png";
-import tooltyp from "..//assets/tooltyp.png";
+import tooltyp from "..//assets//img/tooltyp.png";
 
 
 export const projects = [
