@@ -3,6 +3,7 @@ import inmohouse from "..//assets/img/inmohouse.png";
 import meals from "..//assets/img/meals.png";
 import industry from "..//assets/img/industry.png";
 import movie from "..//assets/img/movie.png";
+import tooltyp from "..//assets/tooltyp.png";
 
 
 export const projects = [
@@ -67,16 +68,16 @@ export const projects = [
     codigo: "https://github.com/milagros-lab/industry"
   },
   {
-    title: "Web fashion",
+    title: "Tooltyp",
     description:
-      "Maquetacion de web con css, imagenes responsive.",
-    image: industry,
-    tags: ["Html", "Saas", "Bootstrap"],
+      "Maquetacion de web con Html, Css y Bootstrap, totalmente responsible para tamanos movil, tablet y ordenador.",
+    image: tooltyp,
+    tags: ["Html", "Css", "Bootstrap"],
     source: "",
     liveVersion: "",
-    id: 4,
-    enlace : "https://zesty-chebakia-c53ed2.netlify.app/",
-    codigo: "https://github.com/milagros-lab/industry"
+    id: 5,
+    enlace : "https://lnkd.in/d-VzRn3S",
+    codigo: "https://github.com/milagros-lab/tooltyp-prueba"
   },
  
 ];
